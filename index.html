@@ -1,93 +1,54 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <title>contact form</title>
+</head>
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<body>
 
+<link href="contact-form.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
+<div class="fcf-body">
 
-    <title>Contact Form #6</title>
-  </head>
-  <body>
-  
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
 
-  <div class="content">
-    
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          
-
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              
-              <h3 class="heading mb-4">Welcome to Maxwell Aviation's Web Page!</h3>
-              <p>We are in the process of making an app, but here is an example of a form that will be integrated!</p>
-
-              <p><img src="images/undraw-contact.svg" alt="Image" class="img-fluid"></p>
-
-
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
             </div>
-            <div class="col-md-6">
-              
-              <form class="mb-5" method="post" id="contactForm" name="contactForm">
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
-                  </div>
-                </div>  
-                <div class="row">
-                  <div class="col-12">
-                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
-                  <span class="submitting"></span>
-                  </div>
-                </div>
-              </form>
-
-              <div id="form-message-warning mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        <div class="fcf-credit" id="fcf-credit">
+        Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
+        </div>
+
+    </form>
     </div>
 
-  </div>
-    
-    
+</div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-
-  </body>
-  <foot>Button will not do anything currently!!!!!</foot>
+</body>
 </html>
