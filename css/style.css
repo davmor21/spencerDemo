@@ -3,7 +3,15 @@ body {
   background-color: #fff;
   line-height: 1.9;
   color: #8c8c8c; }
-
+.foot {
+  position: fixed;
+  font-size: 25;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto", sans-serif;
